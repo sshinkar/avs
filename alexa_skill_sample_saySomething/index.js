@@ -21,7 +21,7 @@ const request = require('sync-request');
 //Make sure to enclose your value in quotes, like this: const APP_ID = 'amzn1.ask.skill.bb4045e6-b3e8-4133-b650-72923c5980f1';
 const APP_ID = 'amzn1.ask.skill.bb4045e6-b3e8-4133-b650-72923c5980f1'; // replace this with your skill ID.
 
-const SKILL_NAME = 'skilly';
+const SKILL_NAME = 'YOUR_SKILL_NAME';
 const GET_NAME = "What is your name? ";
 const LAUNCH_MESSAGE = 'Hello,You can ask me to say your name.';
 const HELP_MESSAGE = 'Hello,You can ask me to say your name or age.';
