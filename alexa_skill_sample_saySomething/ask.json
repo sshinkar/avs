@@ -1,0 +1,101 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my skill",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SaySomethingIntent",
+                    "slots": [],
+                    "samples": [
+                        "wake up",
+                        "say something",
+                        "say hello"
+                    ]
+                },
+                {
+                    "name": "AskNameIntent",
+                    "slots": [],
+                    "samples": [
+                        "say this name",
+                        "do you know who I am",
+                        "say my name",
+                        "what is my name"
+                    ]
+                },
+                {
+                    "name": "SayNameIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "it is {name}",
+                        "{name}",
+                        "my name is {name}"
+                    ]
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "AskNameIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": []
+                },
+                {
+                    "name": "SayNameIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1250132105895.389489912877"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Confirm.Intent.1193386075185",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "ok {name}"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1250132105895.389489912877",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what is your name?"
+                    }
+                ]
+            }
+        ]
+    }
+}
