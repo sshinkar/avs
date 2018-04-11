@@ -1,5 +1,6 @@
 # avs
 How to deploy.
+
 1.Download the 'alexa_skill_sample_saySomething' to your local directory.
 
 2.Asumming npm installed on your machine if not just google it its easy to install. Go to the directory 'alexa_skill_sample_saySomething' and run this commnad 'npm install'
